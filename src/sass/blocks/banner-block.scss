@@ -1,0 +1,100 @@
+@import "../utilities.scss";
+
+.banner-block{
+	background-image: url("../../src/img/banner_bg.jpg");
+	background-size: cover;
+	background-position: 50% 100%;
+
+	&__wrap{
+		padding: 106px 0 52px;
+	}
+}
+
+.overlay{
+	background-color: rgba($color: #252B49, $alpha: 0.8);
+}
+
+.banner{
+
+	&__title{
+		font-size: 36px;
+		line-height: 42px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	&__subtitle{
+		margin-top: 33px;
+		color: #FFFFFF;
+	}
+
+	&__button{
+		min-width: 280px;
+		padding: 18px 10px;
+		border: none;
+		margin-top: 51px;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		background: #FF4343;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+
+		&:hover{
+			background: #E71414;
+		}
+
+		&:active{
+			box-shadow: 4px 4px 30px #FF4343;
+		}
+	}
+}
+
+@media (min-width: 320px){
+	.banner-block{
+		&__wrap{
+			padding: elSize(106, 257, 320, 1024) 0 elSize(52, 126, 320, 1024);
+		}
+	}
+
+	.banner{
+
+		&__title{
+			font-size: elSize(36, 48, 320, 1024);
+			line-height: elSize(42, 56, 320, 1024);
+		}
+
+		&__subtitle{
+			margin-top: elSize(33, 62, 320, 1024);
+			font-size: elSize(14, 18, 320, 1024);
+			line-height: elSize(16, 21, 320, 1024);
+		}
+
+		&__button{
+			min-width: elWidth(280, 314, 320, 1024);
+			padding: elSize(18, 26, 320, 1024) elSize(10, 20, 320, 1024);
+			margin-top: elSize(51, 92, 320, 1024);
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.banner{
+
+		&__title{
+			font-size: elSize(48, 64, 1024, 1510);
+			line-height: elSize(56, 75, 1024, 1510);
+		}
+
+		&__subtitle{
+			font-size: elSize(18, 24, 1024, 1510);
+			line-height: elSize(21, 28, 1024, 1510);
+		}
+
+		&__button{
+			min-width: elWidth(314, 370, 1024, 1510);
+		}
+	}
+}

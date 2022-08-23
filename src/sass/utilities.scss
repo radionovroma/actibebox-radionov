@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+@function toRem($value){
+	$remValue: math.div($value, 16) +rem;
+	@return $remValue;
+}
+
+@function elWidth($minSize, $maxSize, $minWidthContainer, $maxWidthContainer){
+
+	$slope: math.div($maxSize - $minSize, $maxWidthContainer - $minWidthContainer);
+	$yAxisIntersection: -$minWidthContainer * $slope + $minSize;
+  
+	$remSizeYAxisIntersection: toRem($yAxisIntersection);
+	$remMinSize: toRem($minSize);
+	$remMaxSize: toRem($maxSize);
+  
+	@return clamp(#{ if($minSize > $maxSize, $remMaxSize, $remMinSize) }, #{$remSizeYAxisIntersection} + #{$slope * 100}vw,  #{ if($minSize > $maxSize, $remMinSize, $remMaxSize) });
+}
+
+@function elSize($minSize, $maxSize, $minWidthContainer, $maxWidthContainer){
+
+	$slope: (math.div($minSize, math.div($minWidthContainer, 100)) + math.div($maxSize, math.div($maxWidthContainer,100)));
+	$xAxisIntersection: math.div($slope, 2);
+
+	$remMinSize: toRem($minSize);
+	$remMaxSize: toRem($maxSize);
+
+	@return clamp(#{ if($minSize > $maxSize, $remMaxSize, $remMinSize) }, #{$xAxisIntersection}vw, #{ if($minSize > $maxSize, $remMinSize, $remMaxSize)})
+}
