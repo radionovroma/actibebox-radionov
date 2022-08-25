@@ -1,12 +1,16 @@
 @import "../utilities.scss";
 
 .banner-block{
-	background-image: url("../../src/img/banner_bg.jpg");
+	background: url("../img/banner_bg.jpg") 50% 100%;
 	background-size: cover;
-	background-position: 50% 100%;
 
 	&__wrap{
 		padding: 106px 0 52px;
+		transition: all 0.3s ease 0s;
+
+		&._active{
+			opacity: 0;
+		}
 	}
 }
 
@@ -15,7 +19,6 @@
 }
 
 .banner{
-
 	&__title{
 		font-size: 36px;
 		line-height: 42px;
@@ -39,8 +42,8 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		background: #FF4343;
-		cursor: pointer;
 		transition: all 0.3s ease 0s;
+		cursor: pointer;
 
 		&:hover{
 			background: #E71414;
@@ -52,7 +55,7 @@
 	}
 }
 
-@media (min-width: 320px){
+@media (min-width: 321px){
 	.banner-block{
 		&__wrap{
 			padding: elSize(106, 257, 320, 1024) 0 elSize(52, 126, 320, 1024);
@@ -74,6 +77,7 @@
 
 		&__button{
 			min-width: elWidth(280, 314, 320, 1024);
+			max-width: 314px;
 			padding: elSize(18, 26, 320, 1024) elSize(10, 20, 320, 1024);
 			margin-top: elSize(51, 92, 320, 1024);
 		}
@@ -82,7 +86,6 @@
 
 @media (min-width: 1024px){
 	.banner{
-
 		&__title{
 			font-size: elSize(48, 64, 1024, 1510);
 			line-height: elSize(56, 75, 1024, 1510);
@@ -95,6 +98,7 @@
 
 		&__button{
 			min-width: elWidth(314, 370, 1024, 1510);
+			max-width: 370px;
 		}
 	}
 }

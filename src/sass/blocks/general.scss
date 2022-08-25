@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
 
 body{
@@ -21,17 +22,15 @@ body{
 	margin: 0 auto;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
 	.container{
 		max-width: elWidth(280, 984, 320, 1024);
-		
 	}
 }
 
 @media (min-width: 1024px) {
 	.container{
 		max-width: elWidth(984, 1170, 1024, 1510);
-		
 	}
 }
 
