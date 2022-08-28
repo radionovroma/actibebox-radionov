@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap"     rel="stylesheet">
@@ -348,13 +349,98 @@
       </ul>
     </section>
 
+    <section class="advice-block">
+      <div class="advice-block__swiper advice-swiper swiper">
+        <div class="advice-swiper__wrap advice-wrapper swiper-wrapper">
+          <div class="advice-wrapper__slide advice-slide swiper-slide">
+            <picture class="advice-slide__img">
+              <source srcset="./src/img/slide1@desktop.jpg" media="(min-width: 1510px)">
+              <source srcset="./src/img/slide1@tablet.jpg" media="(min-width: 1024px)">
+              <img src="./src/img/slide1@mobile.jpg" alt="Fisrst slide img">
+            </picture>
+            <div class="advice-slide__info advice-info">
+              <h3 class="advice-info__title">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </h3>
+              <p class="advice-info__text">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+          <div class="advice-wrapper__slide advice-slide swiper-slide">
+            <picture class="advice-slide__img">
+              <source srcset="./src/img/slide2@desktop.jpg" media="(min-width: 1510px)">
+              <source srcset="./src/img/slide2@tablet.jpg" media="(min-width: 1024px)">
+              <img src="./src/img/slide2@mobile.jpg" alt="Second slide img">
+            </picture>
+            <div class="advice-slide__info advice-info">
+              <h3 class="advice-info__title">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </h3>
+              <p class="advice-info__text">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+          <div class="advice-wrapper__slide advice-slide swiper-slide">
+            <picture class="advice-slide__img">
+              <source srcset="./src/img/slide3@desktop.jpg" media="(min-width: 1510px)">
+              <source srcset="./src/img/slide3@tablet.jpg" media="(min-width: 1024px)">
+              <img src="./src/img/slide3@mobile.jpg" alt="Third slide img">
+            </picture>
+            <div class="advice-slide__info advice-info">
+              <h3 class="advice-info__title">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </h3>
+              <p class="advice-info__text">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+          <div class="advice-wrapper__slide advice-slide swiper-slide">
+            <picture class="advice-slide__img">
+              <source srcset="./src/img/slide4@desktop.jpg" media="(min-width: 1510px)">
+              <source srcset="./src/img/slide4@tablet.jpg" media="(min-width: 1024px)">
+              <img src="./src/img/slide4@mobile.jpg" alt="Fourth slide img">
+            </picture>
+            <div class="advice-slide__info advice-info">
+              <h3 class="advice-info__title">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </h3>
+              <p class="advice-info__text">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+          <div class="advice-wrapper__slide advice-slide swiper-slide">
+            <picture class="advice-slide__img">
+              <source srcset="./src/img/slide5@desktop.jpg" media="(min-width: 1510px)">
+              <source srcset="./src/img/slide5@tablet.jpg" media="(min-width: 1024px)">
+              <img src="./src/img/slide5@mobile.jpg" alt="Fifth slide img">
+            </picture>
+            <div class="advice-slide__info advice-info">
+              <h3 class="advice-info__title">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </h3>
+              <p class="advice-info__text">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
 
   </footer>
 
-  <script src="./src/js/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./src/js/header.js"></script>
+	<script src="./src/js/swiper.js"></script>
 
 </body>
 </html>

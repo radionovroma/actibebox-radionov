@@ -1,0 +1,131 @@
+.advice-block{
+	max-width: 1510px;
+	margin: 0 auto;
+}
+
+.advice-swiper{
+	padding-bottom: 33px;
+}
+
+.advice-slide{
+	display: flex;
+	flex-direction: column;
+
+	&:nth-child(1),&:nth-child(5){
+		background-color: #353C65;
+	}
+
+	&:nth-child(2n){
+		background-color: #5C3249;
+	}
+
+	&:nth-child(3){
+		background-color: #2C3154;
+	}
+
+	&__img{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__info{
+		max-width: 320px;
+		padding: 28px 20px 100px;
+		margin: 0 auto;
+	}
+}
+
+.advice-info{
+	&__title{
+		font-family: 'Cardo', 'Bodoni MT', serif;
+		font-style: italic;
+		font-size: 24px;
+		line-height: 32px;
+		text-transform: capitalize;
+		color: #FFFFFF;
+	}
+
+	&__text{
+		margin-top: 33px;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+}
+
+.swiper-pagination{
+	bottom: 0 !important;
+}
+
+.swiper-pagination-bullet{
+	width: 9px;
+	height: 9px;
+	margin: 0 10px !important;
+	background-color: #ffffff !important; 
+	border: 1px solid #7E5D6F !important;
+	opacity: 100 !important;
+
+	&-active{
+		background-color: #7E5D6F !important;
+	}
+}
+
+@media (min-width: 648px) {
+	.advice-slide{
+		display: flex;
+		flex-direction: row;
+	
+		&__img{
+			display: flex;
+			align-items: center;
+		}
+
+		&__info{
+			max-width: none;
+			padding: 20px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {	
+	.advice-swiper{
+		padding-bottom: elSize(33, 45, 1024, 1510);
+	}
+
+	.advice-slide{
+		display: flex;
+		flex-direction: row;
+	
+		&__info{
+			padding: 28px elSize(104, 170, 1024, 1510) 28px elSize(88, 129, 1024, 1510);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	
+	.advice-info{
+		&__title{
+			font-family: 'Cardo', 'Bodoni MT', serif;
+			font-style: italic;
+			font-size: elSize(24, 36, 1024, 1510);
+			line-height: elSize(32, 36, 1024, 1510);
+			text-align: left;
+		}
+	
+		&__text{
+			margin-top: elSize(25, 35, 1024, 1510);
+			font-size: elSize(12, 13, 1024, 1510);
+			line-height: elSize(14, 15, 1024, 1510);
+			text-align: left;
+		}
+	}
+	
+	.swiper-pagination-bullet{
+		width: elWidth(9, 14, 1024, 1510);
+		height: elWidth(9, 14, 1024, 1510);
+		margin: 0 12.5px !important;
+	}
+}
