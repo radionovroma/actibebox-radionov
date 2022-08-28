@@ -1,0 +1,88 @@
+.download-block{
+	padding: 57px 20px 45px;
+
+	&__title{
+		padding: 0 35px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		color: #000000;
+	}
+
+	&__subtitle{
+		margin-top: 25px;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	&__button{
+		margin-top: 15px;
+		border: none;
+		padding: 30px;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		background: #FF4343;
+		cursor: pointer;
+
+		&:hover{
+			background: #E71414;
+		}
+
+		&:active{
+			box-shadow: 4px 4px 30px #FF4343;
+		}
+	}
+}
+
+@media (min-width: 321px) {
+	.download-block{
+		padding: elSize(57, 95, 320, 1024) 20px elSize(45, 78, 320, 1024);
+	
+		&__title{
+			font-size: elSize(18, 24, 320, 1024);
+			line-height: elSize(24, 28, 320, 1024);
+		}
+	
+		&__subtitle{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	
+		&__button{
+			min-width: elWidth(280, 314, 320, 1024);
+			margin-top: elSize(15, 45, 320, 1024);
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.download-block{
+		padding: elSize(95, 130, 1024, 1510) 0 elSize(78, 114, 1024, 1510);
+	
+		&__title{
+			font-size: elSize(24, 30, 1024, 1510);
+			line-height: elSize(28, 35, 1024, 1510);
+		}
+	
+		&__subtitle{
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
+		}
+	
+		&__button{
+			min-width: elWidth(314, 370, 1024, 1510);
+			margin-top: elSize(45, 55, 1024, 1510);
+			font-size: elSize(18, 24, 1024, 1510);
+			line-height: elSize(21, 28, 1024, 1510);
+		}
+	}
+}
