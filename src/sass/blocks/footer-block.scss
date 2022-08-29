@@ -1,3 +1,5 @@
+@import "../utilities.scss";
+
 .footer-block{
 	padding-top: 35px;
 	color: #FFFFFF;
@@ -11,6 +13,8 @@
 }
 
 .location{
+	min-width: 280px;
+
 	&__title{
 		font-weight: 700;
 		text-transform: uppercase;
@@ -23,6 +27,7 @@
 }
 
 .social{
+	min-width: 280px;
 	margin-top: 69px;
 
 	&__title{
@@ -54,6 +59,7 @@
 }
 
 .footer-info{
+	min-width: 280px;
 	margin-top: 59px;
 
 	&__title{
@@ -66,14 +72,17 @@
 		text-transform: capitalize;
 	}
 }
-
-.copiright__text{
-	text-transform: capitalize;
-	color: #808080;
+.copyright{
+	min-width: 280px;
+	
+	&__text{
+		text-transform: capitalize;
+		color: #808080;
 
 	& span{
 		color: #FFFFFF;
 	}
+}
 }
 
 @media (min-width: 1024px) {
@@ -92,7 +101,7 @@
 	}
 	
 	.location{
-		min-width: elWidth(315, 370, 1024, 1510);
+		max-width: elWidth(315, 370, 1024, 1510);
 		font-size: elSize(14, 18, 1024, 1510);
 		line-height: elSize(16, 21, 1024, 1510);
 
@@ -102,7 +111,7 @@
 	}
 	
 	.social{
-		min-width: elWidth(315, 370, 1024, 1510);
+		max-width: elWidth(315, 370, 1024, 1510);
 		margin-top: 0;
 	
 		&__title{
@@ -135,9 +144,12 @@
 		}
 	}
 	
-	.copiright__text{
-		min-width: elWidth(315, 370, 1024, 1510);
-		font-size: elSize(14, 18, 1024, 1510);
-		line-height: elSize(16, 21, 1024, 1510);
+	.copyright{
+		max-width: elWidth(315, 370, 1024, 1510);
+
+		&__text{
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
+		}
 	}
 }

@@ -1,3 +1,5 @@
+@import "../utilities.scss";
+
 .team-block{
 	padding: 35px 0;
 }
@@ -88,6 +90,5 @@
 	.member-social-link{
 		width: elWidth(33, 39, 1024, 1510);
 		height: elWidth(33, 39, 1024, 1510);
-
 	}
 }

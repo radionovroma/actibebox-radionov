@@ -17,7 +17,6 @@
 		font-weight: 900;
 		font-size: 18px;
 		line-height: 21px;
-		text-align: center;
 		text-transform: uppercase;
 		color: #2D3033;
 
@@ -78,9 +77,9 @@
 		max-width: elWidth(315, 370, 1024, 1510);
 
 		&__title{
+			padding-top: elSize(120 , 145, 1024, 1510);
 			font-size: elSize(18, 24, 1024, 1510);
 			line-height: elSize(21, 28, 1024, 1510);
-			padding-top: elSize(120 , 145, 1024, 1510);
 
 			&::before{
 				font-size: elSize(65, 80, 1024, 1510);
