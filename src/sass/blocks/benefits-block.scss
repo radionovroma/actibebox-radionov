@@ -69,8 +69,7 @@
 	}
 
 	.benefits-block__list{
-		justify-content: space-between;
-		row-gap: elSize(60, 100, 1024, 1510);
+		gap:  elSize(60, 100, 1024, 1510) elSize(19, 29, 1024, 1510);
 	}
 
 	.benefit{

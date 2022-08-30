@@ -59,8 +59,7 @@
 	}
 	
 	.team-block__list{
-		justify-content: space-between;
-		gap: 0;
+		column-gap: elSize(25, 28, 1024, 1510);
 	}
 	
 	.team-member{

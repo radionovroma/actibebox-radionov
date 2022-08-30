@@ -142,6 +142,8 @@
 	}
 	
 	.menu{
+		max-width: elWidth(566, 670, 1024, 1510);
+
 		&__icon{
 			display: none;
 		}
@@ -149,13 +151,17 @@
 		&__nav{
 			position: inherit;
 			display: block;
-			min-width: elWidth(560, 670, 1024, 1510);
+			min-width: 565px;
+			max-width: elWidth(566, 670, 1024, 1510);
 			transform: none;
 		}
 	}
 
 	.nav-list{
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: elWidth(566, 670, 1024, 1510);
 
 		&__item{
 			display: flex;
@@ -166,8 +172,7 @@
 	
 	.nav-item__link{
 		justify-content: center;
-		min-width: elWidth(115, 134, 1024, 1510);
-		max-width: 134px;
+		width: elWidth(113, 134, 1024, 1510);
 		height: 100%;
 		padding: 20px 10px;
 		font-size: elSize(12, 13, 1024, 1510);
