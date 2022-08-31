@@ -83,6 +83,9 @@
 			margin-top: elSize(45, 55, 1024, 1510);
 			font-size: elSize(16, 21, 1024, 1510);
 			line-height: elSize(21, 25, 1024, 1510);
+			animation-name: pulse;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
 		}
 	}
 }

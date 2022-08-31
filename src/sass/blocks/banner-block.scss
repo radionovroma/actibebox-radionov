@@ -47,6 +47,7 @@
 
 		&:hover{
 			background: #E71414;
+			animation: none;
 		}
 
 		&:active{
@@ -102,8 +103,12 @@
 		}
 
 		&__button{
+			position: relative;
 			min-width: elWidth(314, 370, 1024, 1510);
 			max-width: 370px;
+			animation-name: pulse;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
 		}
 	}
 }
