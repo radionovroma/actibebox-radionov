@@ -6,7 +6,7 @@
 	background: #353C65;
 
 	&__copyright{
-		padding: 30px 0;
+		padding: 30px 0 25px;
 		margin-top: 35px;
 		background: #2C3154;
 	}
@@ -16,12 +16,13 @@
 	min-width: 280px;
 
 	&__title{
+		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 
 	&__text{
-		margin-top: 35px;
+		margin-top: 33px;
 		text-transform: capitalize;
 	}
 }
@@ -31,6 +32,7 @@
 	margin-top: 69px;
 
 	&__title{
+		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
@@ -63,6 +65,7 @@
 	margin-top: 59px;
 
 	&__title{
+		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
@@ -95,23 +98,30 @@
 		}
 	
 		&__copyright{
-			padding: elSize(14, 24, 1024, 1510);
+			padding: 8px;
 			margin-top: elSize(41, 71, 1024, 1510);
 		}
 	}
 	
 	.location{
-		max-width: elWidth(315, 370, 1024, 1510);
-		font-size: elSize(14, 18, 1024, 1510);
-		line-height: elSize(16, 21, 1024, 1510);
+		min-width: elWidth(315, 370, 1024, 1510);
+		max-width: 370px;
 
+		&__title{
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
+		}
+	
 		&__text{
-			margin-top: elSize(18, 29, 1024, 1510);
+			margin-top: elSize(16, 28, 1024, 1510);
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
 		}
 	}
 	
 	.social{
-		max-width: elWidth(315, 370, 1024, 1510);
+		min-width: elWidth(315, 370, 1024, 1510);
+		max-width: 370px;
 		margin-top: 0;
 	
 		&__title{
@@ -136,11 +146,16 @@
 	.footer-info{
 		max-width: elWidth(315, 370, 1024, 1510);
 		margin-top: 0;
-		font-size: elSize(14, 18, 1024, 1510);
-		line-height: elSize(16, 21, 1024, 1510);
+
+		&__title{
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
+		}
 	
 		&__text{
-			margin-top: elSize(18, 29, 1024, 1510);
+			margin-top: elSize(16, 29, 1024, 1510);
+			font-size: elSize(14, 18, 1024, 1510);
+			line-height: elSize(16, 21, 1024, 1510);
 		}
 	}
 	
@@ -148,8 +163,20 @@
 		max-width: elWidth(315, 370, 1024, 1510);
 
 		&__text{
-			font-size: elSize(14, 18, 1024, 1510);
-			line-height: elSize(16, 21, 1024, 1510);
+			font-size: elSize(11, 14, 1024, 1510);
+			line-height: elSize(14, 18, 1024, 1510);
+		}
+	}
+}
+
+@media (min-width: 1510px) {
+	.footer-block{
+		&__copyright{
+			padding: 26px 0 22px;
+			&__text{
+				font-size: 14px;
+				line-height: 14px;
+			}
 		}
 	}
 }

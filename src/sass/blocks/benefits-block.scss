@@ -1,19 +1,19 @@
 @import "../utilities.scss";
 
 .benefits-block{
-	padding: 50px 0 35px;
+	padding: 40px 0 35px;
 }
 
 .benefits-block__list{
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 41px;
 }
 
 .benefit{
 	&__title{
 		position: relative;
-		padding-top: 110px;
+		padding-top: 112px;
 		font-weight: 900;
 		font-size: 18px;
 		line-height: 21px;
@@ -24,71 +24,81 @@
 			position: absolute;
 			top: 0;
 			left: 50%;
-			font-size: 60px;
+			font-size: 75px;
 			transform: translate(-50%, 0);
 		}
 	}
 
 	&__text{
-		margin-top: 17px;
+		margin-top: 10px;
 	}
 }
 
 @media (min-width: 321px) {
 	.benefits-block{
-		padding: elSize(50, 90, 320, 1024) 0 elSize(35, 80, 320, 1024);
+		padding: elSize(40, 65, 320, 1024) 0 elSize(35, 65, 320, 1024);
 	}
 
 	.benefits-block__list{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: elSize(50, 60, 320, 1024) 15px;
+		gap: 41px 15px;
 	}
 
 	.benefit{
 		max-width: elWidth(280, 315, 320, 1024);
 
 		&__title{
-			padding-top: elSize(110, 120, 320, 1024);
+			padding-top: elSize(112, 130, 320, 1024);
 
 			&::before{
-				font-size: elSize(60, 65, 320, 1024);
+				font-size: elSize(75, 85, 320, 1024);
 			}
 		}
 
 		&__text{
-			margin-top: elSize(17, 25, 320, 1024);
+			margin-top: elSize(10, 14, 320, 1024);
 		}
 	}
 }
 
 @media (min-width: 1024px) {
 	.benefits-block{
-		padding: elSize(90, 130, 320, 1024) 0 elSize(80, 135, 320, 1024);
+		padding: elSize(65, 136, 1024, 1510) 0 elSize(65, 130, 1024, 1510);
 	}
 
 	.benefits-block__list{
-		gap:  elSize(60, 100, 1024, 1510) elSize(19, 29, 1024, 1510);
+		gap:  47px elSize(19, 29, 1024, 1510);
 	}
 
 	.benefit{
 		max-width: elWidth(315, 370, 1024, 1510);
 
 		&__title{
-			padding-top: elSize(120 , 145, 1024, 1510);
-			font-size: elSize(18, 24, 1024, 1510);
-			line-height: elSize(21, 28, 1024, 1510);
+			padding-top: elSize(130 , 155, 1024, 1510);
+			font-size: elSize(16, 24, 1024, 1510);
+			line-height: elSize(18, 28, 1024, 1510);
 
 			&::before{
-				font-size: elSize(65, 80, 1024, 1510);
+				font-size: elSize(85, 100, 1024, 1510);
 			}
 		}
 
 		&__text{
-			margin-top: elSize(25, 50, 1024, 1510);
-			font-size: elSize(14, 18, 1024, 1510);
-			line-height: elSize(16, 21, 1024, 1510);
+			margin-top: elSize(10, 50, 1024, 1510);
+			font-size: elSize(12, 18, 1024, 1510);
+			line-height: elSize(14, 21, 1024, 1510);
 		}
+	}
+}
+
+@media (min-width: 1510px) {
+	.benefits-block{
+		padding: 116px 0 141px;
+	}
+
+	.benefits-block__list{
+		gap:  95px 29px;
 	}
 }

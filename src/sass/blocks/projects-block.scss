@@ -16,7 +16,7 @@
 		display: none;
 		width: 100%;
 		height: 100%;
-		padding: 10px;
+		padding: 9px;
 	}
 		
 	&:nth-child(1){
@@ -58,13 +58,13 @@
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
-		gap: 15px;
+		gap: 8px;
 		background-color: rgba($color: #FF4343, $alpha: 0.8);
 		
 		&__title{
 			font-weight: 900;
 			font-size: 18px;
-			line-height: 21px;
+			line-height: 17px;
 			text-transform: uppercase;
 			color: #FFFFFF;
 		}
@@ -167,19 +167,20 @@
 			background-image: url("../img/project8@desktop.jpg");
 		}
 	}
+		
+	.project:hover{
+		.project-wrap{
+			gap: elSize(18, 40, 1024, 1510);
 
-	
-.project:hover{
-	.project-wrap{
-		&__title{
-			font-size: elSize(18, 24, 1024, 1510);
-			line-height: elSize(21, 28, 1024, 1510);
-		}
+			&__title{
+				font-size: elSize(18, 24, 1024, 1510);
+				line-height: elSize(21, 28, 1024, 1510);
+			}
 
-		&__subtitle{
-			font-size: elSize(14, 18, 1024, 1510);
-			line-height: elSize(16, 21, 1024, 1510);
+			&__subtitle{
+				font-size: elSize(14, 18, 1024, 1510);
+				line-height: elSize(16, 21, 1024, 1510);
+			}
 		}
 	}
-}
 }

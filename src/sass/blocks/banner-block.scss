@@ -33,12 +33,12 @@
 
 	&__button{
 		min-width: 280px;
-		padding: 18px 10px;
+		padding: 18px 10px 22px;
 		border: none;
-		margin-top: 51px;
+		margin-top: 67px;
 		font-weight: 900;
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 21px;
+		line-height: 18px;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		background: #FF4343;
@@ -63,9 +63,8 @@
 	}
 
 	.banner{
-
 		&__title{
-			font-size: elSize(36, 48, 320, 1024);
+			font-size: elSize(36, 47, 320, 1024);
 			line-height: elSize(42, 56, 320, 1024);
 		}
 
@@ -78,16 +77,22 @@
 		&__button{
 			min-width: elWidth(280, 314, 320, 1024);
 			max-width: 314px;
-			padding: elSize(18, 26, 320, 1024) elSize(10, 20, 320, 1024);
-			margin-top: elSize(51, 92, 320, 1024);
+			padding: elSize(18, 26, 320, 1024) elSize(10, 20, 320, 1024) elSize(22, 33, 320, 1024);
+			margin-top: elSize(67, 92, 320, 1024);
 		}
 	}
 }
 
 @media (min-width: 1024px){
+	.banner-block{
+		&__wrap{
+			padding: 255px 110px 125px;
+		}
+	}
+
 	.banner{
 		&__title{
-			font-size: elSize(48, 64, 1024, 1510);
+			font-size: elSize(47, 64, 1024, 1510);
 			line-height: elSize(56, 75, 1024, 1510);
 		}
 
@@ -99,6 +104,25 @@
 		&__button{
 			min-width: elWidth(314, 370, 1024, 1510);
 			max-width: 370px;
+		}
+	}
+}
+
+@media (min-width: 1510px){
+	.banner-block{
+		&__wrap{
+			padding: 229px 60px 121px;
+		}
+	}
+
+	.banner{
+		&__subtitle{
+			margin-top: 32px;
+			padding: 0 20px 0;
+		}
+
+		&__button{
+			margin-top: 82px;
 		}
 	}
 }

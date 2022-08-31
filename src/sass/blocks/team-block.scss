@@ -9,7 +9,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 50px elSize(20, 80, 320, 1024);
+	gap: 52px elSize(20, 80, 320, 1024);
 }
 
 .team-member{
@@ -31,7 +31,7 @@
 	}
 
 	&__position{
-		margin-top: 5px;
+		margin-top: 6px;
 		text-transform: uppercase;
 		color: #FF4343;
 	}
@@ -66,19 +66,20 @@
 		max-width: elWidth(227, 270, 1024, 1510);
 	
 		&__name{
-			font-size: elSize(18, 24, 1024, 1510);
+			margin-top: elSize(25, 28, 1024, 1510);
+			font-size: elSize(14, 26, 1024, 1510);
 			line-height: elSize(21, 28, 1024, 1510);
 		}
 
 		&__position{
-			font-size: elSize(14, 18, 1024, 1510);
-			line-height: elSize(16, 21, 1024, 1510);
+			font-size: elSize(12, 18, 1024, 1510);
+			line-height: elSize(14, 21, 1024, 1510);
 		}
 
 		&__text{
 			margin-top: 22px;
-			font-size: elSize(14, 18, 1024, 1510);
-			line-height: elSize(16, 21, 1024, 1510);
+			font-size: elSize(12, 18, 1024, 1510);
+			line-height: elSize(13, 22, 1024, 1510);
 		}
 
 		&__list{
